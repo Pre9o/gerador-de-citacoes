@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: "Lora", serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  background-color: #222831;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 80px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  text-align: center;
+  width: 500px;
+}
+
+#citacaoDiv {
+  height: 300px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  padding: 40px;
+  background-color: #31363F;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+#autorElemento {
+  margin-top: 15px;
+  font-weight: 300;
+  color: #eeeeee;
+  font-style: italic;
+}
+
+button {
+  font-size: 1.5rem;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #76ABAE;
+  color: #222831;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  opacity: 1;
+  background-color: #222831;
+  color: #76ABAE;
+}
