@@ -1,6 +1,6 @@
 // script.js
 async function pegarCitacao() {
-  const response = await fetch('http://localhost:3000/citacao');
+  const response = await fetch('/api/citacao');
   const { citacao, autor } = await response.json();
 
   console.log(citacao, autor);
