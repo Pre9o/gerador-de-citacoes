@@ -3,7 +3,7 @@ const cheerio = require('cheerio');
 
 module.exports = async (req, res) => {
   const numeroDaPagina = Math.floor(Math.random() * 10) + 1;
-  const url = 'https://www.pensador.com/populares/';
+  const url = `https://www.pensador.com/populares/${numeroDaPagina}/`;
   const { data } = await axios.get(url);
   const $ = cheerio.load(data);
   const citacoesElementos = $('.thought-card p.frase');
