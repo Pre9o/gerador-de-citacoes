@@ -1,14 +1,7 @@
-// server.js
-const express = require('express');
 const axios = require('axios');
 const cheerio = require('cheerio');
-const cors = require('cors');
 
-const app = express();
-
-app.use(cors());
-
-app.get('/citacao', async (req, res) => {
+module.exports = async (req, res) => {
   const numeroDaPagina = Math.floor(Math.random() * 10) + 1;
   const url = 'https://www.pensador.com/populares/';
   const { data } = await axios.get(url);
@@ -25,8 +18,4 @@ app.get('/citacao', async (req, res) => {
   const autor = autorElemento.text();
 
   res.json({ citacao, autor });
-});
-
-app.listen(3000, () => {
-  console.log('App listening on port 3000');
-});
+};
